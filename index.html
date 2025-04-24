@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Podręcznik Elektroniczny</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/3145/3145765.png">
+  <div style="
+  max-width: 700px;
+  margin: 60px auto 40px auto;
+  padding: 40px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  text-align: center;
+">
+  <h1 style="margin-bottom: 20px; font-size: 2em; color: #007bff;">
+    Witaj!
+  </h1>
+  <p style="font-size: 1.1em; color: #444;">
+    To jest interaktywna książka elektroniczna poświęcona podstawom <strong>HTML</strong> i <strong>CSS</strong>.  
+    Znajdziesz tu wszystko: od tekstu, przez listy, tabele, formularze, aż po multimedia.  
+    Korzystaj z menu po lewej stronie, aby wybrać interesujący Cię temat.
+  </p>
+</div>
+<div class="logo" style="
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px 15px;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: all 0.3s ease;
+">
+  <img src="./literka-N.jpg" alt="Logo" style="width: 80px; height: auto;">
+</div>
+
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      margin: 0;
+      padding: 40px;
+      opacity: 0;
+    animation: fadeIn 1.5s forwards;
+    background: linear-gradient(135deg, #00bfff, #a8c6e5);
+  color: white;
+  margin: 0;
+      overflow: hidden;
+      
+    }
+    html {
+    scroll-behavior: smooth; 
+  }
+    @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    } 
+
+    h1 {
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .toc {
+      max-width: 500px;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .sonic {
+      position: absolute;
+      width: 100px;
+      height: auto;
+      top: 0;
+      left: -100px;
+      animation: runAcross 5s linear infinite;
+    }
+
+    @keyframes runAcross {
+      0% {
+        left: -100px;
+        top: calc(50% - 50px);
+      }
+      100% {
+        left: 100%;
+        top: calc(50% - 50px);
+      }
+    }
+
+    .toc h2 {
+      margin-top: 20px;
+      font-size: 1.2em;
+      color: #007bff;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    .toc ul {
+      list-style-type: none;
+      padding-left: 15px;
+      margin: 10px 0 20px 0;
+    }
+
+    .toc ul li {
+      padding: 4px 0;
+    }
+
+    .toc ul li a {
+      text-decoration: none;
+      color: #333;
+      transition: color 0.2s;
+    }
+
+    .toc ul li a:hover {
+      color: #007bff;
+    }
+
+    .toc ul li::before {
+      content: "• ";
+      color: #007bff;
+    }
+    .logo:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4); 
+    border-color: #0056b3; 
+  }
+
+  
+  .toc ul li {
+    transition: none;}
+    
+    .toc ul li a:hover {
+  color: #ffffff;
+  background-color: #007bff;
+  padding: 5px 10px;
+  border-radius: 5px;}
+  </style>
+</head>
+<body>
+
+  <div class="toc">
+    <h1>Spis treści</h1>
+
+    <h2>Tekst</h2>
+    <ul>
+      <li><a href="https://google.com">Tło</a></li>
+      <li><a href="https://google.com">Tekst</a></li>
+      <li><a href="https://google.com">Dział, rozdział, podrozdział</a></li>
+      <li><a href="https://google.com">Nowa linijka lub ustęp</a></li>
+      <li><a href="https://google.com">Czcionka</a></li>
+      <li><a href="https://google.com">Wielkość czcionki</a></li>
+      <li><a href="https://google.com">Kolor czcionki</a></li>
+      <li><a href="https://google.com">Tekst pogrubiony</a></li>
+      <li><a href="https://google.com">Tekst pochylony</a></li>
+      <li><a href="https://google.com">Tekst podkreślony</a></li>
+      <li><a href="https://google.com">Tekst przekreślony</a></li>
+      <li><a href="https://google.com">Indeks górny i dolny</a></li>
+      <li><a href="https://google.com">Linki</a></li>
+      <li><a href="https://google.com">Ukrywanie tekstu</a></li>
+    </ul>
+
+    <h2>Listy</h2>
+    <ul>
+      <li><a href="https://google.com">Nieuporządkowany (wypunktowany)</a></li>
+      <li><a href="https://google.com">Uporządkowany (numerowany)</a></li>
+      <li><a href="https://google.com">Zagnieżdżony</a></li>
+      <li><a href="https://google.com">Definicyjny</a></li>
+      <li><a href="https://google.com">Stylizacja listów</a></li>
+    </ul>
+
+    <h2>Tabele</h2>
+    <ul>
+      <li><a href="https://google.com">Tworzenie tabel</a></li>
+      <li><a href="https://google.com">Łączenie kolumn</a></li>
+      <li><a href="https://google.com">Dodawanie zawartości do tabel</a></li>
+    </ul>
+
+    <h2>Formularze</h2>
+    <ul>
+      <li><a href="https://google.com">Jak tworzyć formularze</a></li>
+      <li><a href="https://google.com">Typy i rodzaje formularzy</a></li>
+    </ul>
+
+    <h2>Multimedia</h2>
+    <ul>
+      <li><a href="https://google.com">Jak dodawać obrazy</a></li>
+      <li><a href="https://google.com">Praca z filmem</a></li>
+      <li><a href="https://google.com">Dodawanie dzwięków</a></li>
+    </ul>
+
+  </div>
+  
+  <img src="./5f35abbc5b7a741-unscreen.gif" class="sonic">
+  
+  <footer style="
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 20px;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  font-size: 0.9em;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+  z-index: 100;
+">
+  © 2025 Twoja Książka o HTML & CSS — Wszystkie prawa zastrzeżone.
+  Wykonane przez Nazara Sorochana, ucznia I klasy Technikum Spsk Częstochowa
+</footer>
+
+</body>
+</html>
